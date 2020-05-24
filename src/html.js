@@ -11,6 +11,14 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lily+Script+One&family=Major+Mono+Display&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+          rel="stylesheet"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

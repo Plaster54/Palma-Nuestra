@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
 import { navigate, useStaticQuery, graphql } from 'gatsby';
 
@@ -14,7 +12,7 @@ import TopAppBar, {
 
 import MaterialIcon from '@material/react-material-icon';
 
-import '../styles/sass/top-app-bar.scss';
+import '../../styles/sass/top-app-bar.scss';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -33,29 +31,38 @@ const Header = () => {
     <>
       <div>
         <TopAppBar
-          dense
           style={{
-            paddingTop: '2%',
-            paddingBottom: '2%',
-            backgroundColor: 'black',
+            paddingTop: '1%',
+            paddingBottom: '3%',
+            background: 'transparent',
+            boxShadow: 'none',
           }}
         >
           <TopAppBarRow>
             <TopAppBarSection
               align="start"
               role="toolbar"
-              style={{ marginLeft: '6vw' }}
+              style={{
+                marginLeft: '3vw',
+                width: '1rem',
+                flexWrap: 'wrap',
+                paddingTop: '0',
+              }}
             >
               <img
                 src={`https:${data.contentfulHeader.logo.fixed.src}`}
                 alt="Imagen principal"
-                style={{ width: '8rem', opacity: '1' }}
+                style={{ width: '9rem' }}
               />
             </TopAppBarSection>
             <TopAppBarSection
               role="toolbar"
-              align="end"
-              style={{ marginRight: '8vw' }}
+              style={{
+                marginRight: '8vw',
+                display: 'flex',
+                flexWrap: 'wrap',
+                alignContent: 'center',
+              }}
             >
               <TopAppBarTitle
                 className="mdc-header-components"
@@ -65,19 +72,19 @@ const Header = () => {
               </TopAppBarTitle>
               <TopAppBarTitle
                 className="mdc-header-components"
-                onClick={() => navigate('/nosotros')}
+                onClick={() => navigate('/')}
               >
                 NOSOTROS
               </TopAppBarTitle>
               <TopAppBarTitle
                 className="mdc-header-components"
-                onClick={() => navigate('/proyectos')}
+                onClick={() => navigate('/')}
               >
                 PROYECTOS
               </TopAppBarTitle>
               <TopAppBarTitle
                 className="mdc-header-components"
-                onClick={() => navigate('/programas')}
+                onClick={() => navigate('/')}
               >
                 PROGRAMAS
               </TopAppBarTitle>

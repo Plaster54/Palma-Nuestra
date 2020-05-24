@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Global, css } from '@emotion/core';
 
 // Custom components
-import Header from './header';
+import Header from './shared/header';
 
 // Styles
 import '../styles/sass/layout-grid.scss';
@@ -14,6 +14,7 @@ import '../styles/sass/material-icon.scss';
 import '../styles/sass/top-app-bar.scss';
 import '../styles/sass/typography.scss';
 import '../styles/sass/button.scss';
+import '../styles/sass/card-image.scss';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
