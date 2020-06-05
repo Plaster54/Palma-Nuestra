@@ -2,7 +2,6 @@ import React from 'react';
 import { Cell, Row } from '@material/react-layout-grid';
 import { Headline5, Body1 } from '@material/react-typography';
 import IconButton from '@material/react-icon-button';
-import MaterialIcon from '@material/react-material-icon';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Footer = () => {
