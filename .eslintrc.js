@@ -1,6 +1,10 @@
 module.exports = {
   extends: ['airbnb', 'prettier'],
   plugins: ['prettier'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 8,
+  },
   rules: {
     'import/no-extraneous-dependencies': 0,
     // Admit use of console.log and derivates in app

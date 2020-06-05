@@ -12,11 +12,11 @@ export default function HTML(props) {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lily+Script+One&family=Major+Mono+Display&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
           rel="stylesheet"
         />
         <meta

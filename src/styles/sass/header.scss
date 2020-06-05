@@ -1,0 +1,41 @@
+
+.mdc-top-bar {
+    padding-top: 0.45%;
+    padding-bottom: 3%;
+    background: transparent;
+    box-shadow: none;
+    font-size: 16px;
+};
+
+.mdc-top-bar-section-img {
+    margin-left: 3vw;
+    width: 0.2rem;
+    flex-wrap: wrap;
+    padding-top: 0;
+    
+}
+
+.mdc-top-bar-section-title {
+    flex-wrap: wrap;
+}
+.mdc-title {
+    font-family: Cambria, bold;
+    font-size: 1.125em;
+    font-weight:600;
+}
+.mdc-top-bar-logo {
+    width: 70%;
+    text-align: center;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+$desktop-width: 1200px;
+$tablet-width: 768px;
+$phone-width:576px;
+
+@media (max-width:$desktop-width) {
+    .mdc-top-bar-section-title {
+        font-size: 14px;
+    }
+}

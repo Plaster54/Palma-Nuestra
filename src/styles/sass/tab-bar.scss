@@ -1,0 +1,26 @@
+@import '@material/react-tab-bar/index.scss';
+@import '@material/react-tab-scroller/index.scss';
+@import '@material/react-tab/index.scss';
+@import '@material/react-tab-indicator/index.scss';
+
+.mdc-tab {
+    @include mdc-tab-text-label-color(white);
+    @include mdc-tab-active-text-label-color(#ff9c00);
+    font-family: Cambria, bold;
+    font-size: 1.0625rem;
+    line-height: 2.25rem;
+    font-weight: 505;
+    height: 30px;
+}
+
+.mdc-tab__ripple::before, .mdc-tab__ripple::after {
+    background: none;
+}
+
+.mdc-tab__ripple {
+opacity: 1;
+}
+
+.mdc-tab-indicator {
+    @include mdc-tab-indicator-underline-color(#e5167e);
+}

@@ -20,26 +20,19 @@ const LandingPage = () => {
   return (
     <>
       <Row
+        className="landing-img"
         style={{
           backgroundImage: `url(https:${data.contentfulLandingPage.backgroundImage.fluid.src})`,
-          height: '100vh',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'not-repeat',
-          width: '100%',
-          marginTop: '-4rem',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
         }}
       >
         <Cell desktopColumns={12}>
           <Headline1
             style={{
               color: 'white',
-              fontFamily: 'Lily Script One, cursive',
+              fontFamily: 'Cambria, bold',
             }}
           >
-            <b>Palma Nuestra</b>
+            <b>PALMA NUESTRA</b>
           </Headline1>
         </Cell>
       </Row>

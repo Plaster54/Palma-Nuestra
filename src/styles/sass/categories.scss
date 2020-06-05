@@ -1,0 +1,28 @@
+.categories-img {
+    background-size: cover;
+    height: 25rem;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Cambria, bold;
+    background-position: center;
+    position: relative;
+}
+.categories-img-zoom::after {
+    background-position: center;
+    height: 25rem;
+    position: relative;
+    background-size: cover;
+    background: rgb(255,248,236);
+    background: linear-gradient(320deg, rgba(255,248,236,1) 0%, rgba(255,156,0,1) 50%);
+}
+
+.categories-h5 {
+    font-weight: 600;
+     font-size: 60px;
+     font-family: Cambria, bold;
+     position: absolute;
+}
